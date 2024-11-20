@@ -1,0 +1,179 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #12181e, #27ac1f); /* Dark gradient with green tones */
+  background-size: 400% 400%;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000; /* White text */
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 15px;
+}
+
+/* Form Container */
+.form-container {
+  background-color: #ffffff; /* White background for the form */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  max-width: 450px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #27ac1f; /* Bright green for headings */
+  font-weight: bold;
+}
+
+/* Buttons Styling */
+button, .login-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #27ac1f, #85fe78); /* Green gradient */
+  border: none;
+  color: #ffffff; /* White text */
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover, .login-btn:hover {
+  background: linear-gradient(135deg, #85fe78, #27ac1f); /* Reverse gradient on hover */
+  transform: scale(1.05);
+}
+
+button:active {
+  background: #12181e; /* Dark background on click */
+}
+
+/* Input Fields Styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #27ac1f; /* Green border */
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  background-color: #f9f9f9; /* Light background */
+  color: #12181e; /* Dark text */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus {
+  border-color: #85fe78; /* Bright green on focus */
+  box-shadow: 0 0 8px rgba(133, 254, 120, 0.6); /* Green glow */
+}
+
+/* Links and Text Styling */
+a {
+  color: #27ac1f; /* Green links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #85fe78; /* Bright green on hover */
+}
+
+/* Redirect Section */
+.redirect {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.redirect a {
+  color: #27ac1f;
+  font-weight: bold;
+}
+
+/* Tabs for Sign Up and Login */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 12px 20px;
+  margin: 0 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #27ac1f; /* Green border */
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.tab:hover {
+  background-color: #27ac1f; /* Green background on hover */
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.tab.active {
+  background-color: #85fe78; /* Bright green active tab */
+  color: #12181e;
+  border-color: #27ac1f;
+}
+
+/* Chatbox Styling */
+.chatbox {
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  max-width: 400px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.chatbox:hover {
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3); /* Slightly darker shadow on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .form-container {
+    padding: 25px;
+    width: 100%;
+  }
+
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tab {
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+  }
+}

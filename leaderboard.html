@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Leaderboard</title>
+  <link rel="stylesheet" href="Leaderboard.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="container">
+      <h1 class="logo">Leaderboard</h1>
+      <ul class="nav-links">
+        <li><a href="#leadership-bar">Leadership</a></li>
+        <li><a href="#leaderboard">Leaderboard</a></li>
+        <li><a href="#submit-review">Add Participant</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <h1>Welcome to the Dynamic Leaderboard</h1>
+      <p>Track top performers dynamically with real-time updates.</p>
+    </div>
+  </header>
+
+  <!-- Leadership Bar -->
+  <section id="leadership-bar" class="section">
+    <div class="container">
+      <h2>Current Leader</h2>
+      <div class="card leader-card">
+        <h3 id="leader-name">No Leader Yet</h3>
+        <p id="leader-performance">Performance: -</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leaderboard Section -->
+  <section id="leaderboard" class="section">
+    <div class="container">
+      <h2>Leaderboard</h2>
+      <table class="leaderboard-table">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Performance</th>
+            <th>Rating</th>
+            <th>Reviews</th>
+          </tr>
+        </thead>
+        <tbody id="leaderboard-body">
+          <!-- Dynamic Rows -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Add Participant Section -->
+  <section id="submit-review" class="section">
+    <div class="container">
+      <h2>Add New Participant</h2>
+      <form id="review-form" class="form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter name" required>
+        </div>
+        <div class="form-group">
+          <label for="performance">Performance (1-100):</label>
+          <input type="number" id="performance" min="1" max="100" required>
+        </div>
+        <div class="form-group">
+          <label for="rating">Rating (1-5):</label>
+          <input type="number" id="rating" min="1" max="5" step="0.1" required>
+        </div>
+        <div class="form-group">
+          <label for="reviews">Review:</label>
+          <textarea id="reviews" placeholder="Write a review"></textarea>
+        </div>
+        <button type="submit">Add Participant</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; Copyright © Student Portal. Made by The Debuggers </p>
+    </div>
+  </footer>
+
+  <script src="leaderboard.js"></script>
+</body>
+</html>

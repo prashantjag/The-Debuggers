@@ -1,0 +1,228 @@
+/* General Reset */
+body, h1, p, a, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #4a4a7c;
+    color: white;
+    overflow-x: hidden;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #3d3c62;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  header nav a:hover {
+    color: #ff5e57;
+  }
+  
+  header #todoListBtn {
+    background-color: #ff5e57;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  header #todoListBtn:hover {
+    background-color: #e04a4a;
+    transform: scale(1.05);
+    box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 30px;
+  }
+  
+  .hero-text {
+    max-width: 50%;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #d7e3fc;
+  }
+  
+  .hero-text h1 span {
+    color: #89c4f4;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #a6b5de;
+  }
+  
+  .learn-more-btn {
+    background-color: #89c4f4;
+    border: none;
+    padding: 10px 20px;
+    color: #3d3c62;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #6a9cb7;
+    transform: scale(1.05);
+    box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 100px;
+    border-radius: 10px;
+  }
+  
+  /* To-Do List Panel */
+  .todo-list {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    color: #4a4a7c;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .todo-list.open {
+    right: 0;
+  }
+  
+  .todo-list header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3d3c62;
+    color: white;
+    padding: 15px;
+  }
+  
+  .todo-list main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .task-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #d9e6f2;
+    border-radius: 5px;
+  }
+  
+  .task-input button {
+    padding: 10px 15px;
+    background-color: #4a7f95;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .task-input button:hover {
+    background-color: #326482;
+    transform: scale(1.05);
+    box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #d9e6f2;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  li.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+  
+  li button {
+    background-color: #6a9cb7;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  li button:hover {
+    background-color: #4a7f95;
+    transform: scale(1.1);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3d3c62;
+    color: white;
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+  }
+  

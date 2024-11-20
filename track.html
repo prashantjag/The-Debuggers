@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Assignment Portal</title>
+    <link rel="stylesheet" href="track.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <h1>Alumni Portal</h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#assignments">Assignments</a></li>
+                <li><a href="#members">Members</a></li>
+                <li><a href="#scores">Scores</a></li>
+                <li><a href="#logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome, Alumni!</h1>
+            <p>Track, assign, and score projects efficiently with our user-friendly portal.</p>
+            <a href="#dashboard" class="btn-primary">Get Started</a>
+        </div>
+        <div class="hero-image">
+            <img src="img3.jpg" alt="Hero Image">
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="dashboard-section">
+        <h2>Dashboard</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Assign Projects</h3>
+                <p>Assign new tasks or projects to members and set deadlines.</p>
+                <a href="#assignments" class="btn-secondary">Assign Now</a>
+            </div>
+            <div class="feature-card">
+                <h3>Track Progress</h3>
+                <p>Monitor ongoing assignments and view member activity.</p>
+                <a href="#members" class="btn-secondary">Track Members</a>
+            </div>
+            <div class="feature-card">
+                <h3>Evaluate Scores</h3>
+                <p>Score member performances and provide valuable feedback.</p>
+                <a href="#scores" class="btn-secondary">Evaluate Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="assignments" class="assignments-section">
+        <h2>Assign Projects</h2>
+        <form class="assign-form">
+            <label for="member-name">Member Name:</label>
+            <input type="text" id="member-name" placeholder="Enter member name">
+
+            <label for="assignment-title">Assignment Title:</label>
+            <input type="text" id="assignment-title" placeholder="Enter assignment title">
+
+            <label for="deadline">Deadline:</label>
+            <input type="date" id="deadline">
+
+            <button type="submit" class="btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <!-- Members Section -->
+    <section id="members" class="members-section">
+        <h2>Members List</h2>
+        <div class="members-grid">
+            <div class="member-card">
+                <h3>John Doe</h3>
+                <p>Assignment: Build a Landing Page</p>
+                <p>Status: In Progress</p>
+            </div>
+            <div class="member-card">
+                <h3>Jane Smith</h3>
+                <p>Assignment: Database Setup</p>
+                <p>Status: Completed</p>
+            </div>
+            <!-- Add more members as needed -->
+        </div>
+    </section>
+
+    <!-- Scores Section -->
+    <section id="scores" class="scores-section">
+        <h2>Evaluate Scores</h2>
+        <form class="score-form">
+            <label for="member-name-score">Member Name:</label>
+            <input type="text" id="member-name-score" placeholder="Enter member name">
+
+            <label for="score">Score:</label>
+            <input type="number" id="score" placeholder="Enter score (0-100)">
+
+            <button type="submit" class="btn-primary">Submit Score</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Copyright © Student Portal. Made by The Debuggers </p>
+    </footer>
+
+    <script src="track.js"></script>
+</body>
+</html>
